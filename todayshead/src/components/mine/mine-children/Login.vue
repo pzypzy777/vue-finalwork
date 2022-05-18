@@ -23,7 +23,7 @@
         </div>
         <div class="login-userpwd">
           <input
-            type="text"
+            type="password"
             name=""
             id=""
             placeholder="请输入密码"
