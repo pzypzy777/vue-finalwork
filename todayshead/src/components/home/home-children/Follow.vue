@@ -3,7 +3,7 @@
     <img class="pic" src="../../../assets/concern.png">
   </div>
   <van-divider>———————————————————————</van-divider>
-  <van-button  @Click="refresh" class=button color=#808080 round=true>内容已看完 看看推荐></van-button>
+  <van-button  @Click="refresh" class="button" color="#808080" round="true">内容已看完 看看推荐></van-button>
 </template>
 
 <script setup lang="ts">

@@ -159,7 +159,9 @@ onMounted(async () => {
   height: 200px;
 }
 .title {
-  letter-spacing:1px;
+  opacity: 0.87;
+  line-height: 20px;
+  letter-spacing:2px;
   padding:5px;
   font-size: 15px;
   display: -webkit-box; /*作为弹性伸缩盒子模型显示*/

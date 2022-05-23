@@ -9,8 +9,6 @@
       </template>
     </NavBar>
     <Tab></Tab>
-    
-
   </div>
 </template>
 

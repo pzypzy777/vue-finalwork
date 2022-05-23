@@ -61,6 +61,8 @@ const openurl = (e: string) => {
   height: 200px;
 }
 .title {
+  opacity: 0.87;
+  line-height: 20px;
   letter-spacing:2px;
   font-size: 15px;
   display: -webkit-box; /*作为弹性伸缩盒子模型显示*/

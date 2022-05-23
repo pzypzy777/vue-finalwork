@@ -97,6 +97,8 @@ const openurl = (e: string) => {
   height: 200px;
 }
 .title {
+  opacity: 0.87;
+  line-height: 20px;
   letter-spacing:1px;
   padding:5px;
   font-size: 15px;

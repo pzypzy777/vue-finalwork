@@ -134,8 +134,10 @@ const openurl = (e: string) => {
 }
 
 .title {
+  opacity: 0.87;
+  line-height: 20px;
   margin-top: 20px;
-  letter-spacing:2px;
+  letter-spacing:1px;
   font-size: 15px;
   display: -webkit-box; /*作为弹性伸缩盒子模型显示*/
   -webkit-line-clamp: 2; /*显示的行数；如果要设置2行加...则设置为2*/
