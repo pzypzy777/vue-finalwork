@@ -3,7 +3,7 @@
   <div class="rebang" v-for="(item, index) in state.newslist">
     <div>
       <a class=rank style="display:inline;">{{index+1}}</a>
-      <a style="display:inline;" class="title">{{ item.word }}</a>
+      <a style="display:inline;" class="title">{{ item['word'] }}</a>
     </div>
     <van-divider />
   </div>

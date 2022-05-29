@@ -7,15 +7,15 @@
     </NavBar>
   </div>
 
-  <div class="video" v-for="(item, index) in state.newslist2.filter((obj) => obj.has_video&&obj.large_image_list)" @click="openurl(item.display_url)">
+  <div class="video" v-for="(item, index) in state.newslist2.filter((obj) => obj&&obj['has_video']&&obj['large_image_list'])" @click="openurl(item['display_url'])">
     <div>
-      <a class="title">{{ item.share_info.title }}</a>
+      <a class="title">{{ item['share_info']['title'] }}</a>
       <div class="pic">
-        <img class="pic-img" :src="`${item.large_image_list[0].url}`" />
+        <img class="pic-img" :src="`${item['large_image_list'][0]['url']}`" />
       </div>
       <div class="footer">
-        <span class="source">{{ item.media_info.name }}</span>
-        <span class="comment">{{ item.comment_count }}评论</span>
+        <span class="source">{{ item['media_info']['name'] }}</span>
+        <span class="comment">{{ item['comment_count'] }}评论</span>
       </div>
     </div>
   </div>

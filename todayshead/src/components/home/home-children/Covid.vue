@@ -25,11 +25,11 @@
       src="../../../assets/login/toutiao.svg"
     />
   </template>
-  <div class="yiqing" v-for="(item, index) in state.newslist" @click="openurl(item.url)">
+  <div class="yiqing" v-for="(item, index) in state.newslist" @click="openurl(item['url'])">
     <div>
-      <a class="title">{{ item.title }}</a>
+      <a class="title">{{ item['title'] }}</a>
       <div class="footer">
-        <span class="source">{{ item.source }}</span>
+        <span class="source">{{ item['source'] }}</span>
         <span class="comment">99+评论</span>
       </div>
     </div>

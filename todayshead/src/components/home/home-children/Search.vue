@@ -29,7 +29,7 @@
         <span v-for="(item, index) in state.historyList" :key="index" class="searchValBtn" >
           <van-button
             round
-            size="middle"
+            size="normal"
             @click="onSearch(item)"
             >{{ item }}
           </van-button>
@@ -40,11 +40,11 @@
     </div>
   </div>
 
-  <div class="content" v-for="(item, index) in state.newslist" @click="openurl(item.url)">
+  <div class="content" v-for="(item, index) in state.newslist" @click="openurl(item['url'])">
     <div>
-      <a class="title">{{ item.title }}</a>
+      <a class="title">{{ item['title'] }}</a>
       <div class="footer">
-        <span class="source">{{ item.source }}</span>
+        <span class="source">{{ item['source'] }}</span>
         <span class="comment">99+评论</span>
       </div>
     </div>

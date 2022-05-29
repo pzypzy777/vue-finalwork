@@ -19,11 +19,12 @@
     "vant": "^3.4.7",
     "vite": "^2.9.0",
     "vue": "^3.2.25",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "webpack": "^5.72.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
-    "@vitejs/plugin-vue": "^2.3.0",
+    "@vitejs/plugin-vue": "^2.3.3",
     "less": "^4.1.2",
     "less-loader": "^10.2.0",
     "sass": "^1.51.0",

@@ -23,16 +23,16 @@
       class="stick"
       v-for="(item, index) in state.newslist2.filter(
         (obj) =>
-          obj.hasOwnProperty('label') || obj.hasOwnProperty('stick_label')
+          Object.prototype.hasOwnProperty.call(obj, 'label')|| Object.prototype.hasOwnProperty.call(obj, ('stick_label'))
       )"
-      @click="openurl(item.display_url)"
+      @click="openurl(item['display_url'])"
     >
       <div>
-        <a class="title">{{ item.abstract }}</a>
+        <a class="title">{{ item['abstract'] }}</a>
         <div class="footer">
           <span class="stick-label">置顶</span>
-          <span class="source">{{ item.media_info.name }}</span>
-          <span class="comment">{{ item.comment_count }}评论</span>
+          <span class="source">{{ item['media_info']['name'] }}</span>
+          <span class="comment">{{ item['comment_count'] }}评论</span>
         </div>
       </div>
     </div>
@@ -41,16 +41,16 @@
       class="not-stick"
       v-for="(item, index) in state.newslist2.filter(
         (obj) =>
-          !obj.hasOwnProperty('image_list') &&
-          !(obj.hasOwnProperty('label') || obj.hasOwnProperty('stick_label'))&&!obj.has_video
+          !Object.prototype.hasOwnProperty.call(obj, 'image_list') &&
+          !(Object.prototype.hasOwnProperty.call(obj, 'label') || Object.prototype.hasOwnProperty.call(obj, 'stick_label'))&&!obj['has_video']
       ).slice(0,4)"
-      @click="openurl(item.display_url)"
+      @click="openurl(item['display_url'])"
     >
       <div>
-        <a class="title">{{ item.abstract }}</a>
+        <a class="title">{{ item['abstract'] }}</a>
         <div class="footer">
-          <span class="source">{{ item.media_info.name }}</span>
-          <span class="comment">{{ item.comment_count }}评论</span>
+          <span class="source">{{ item['media_info']['name'] }}</span>
+          <span class="comment">{{ item['comment_count'] }}评论</span>
         </div>
       </div>
     </div>
@@ -58,20 +58,20 @@
     <div
       class="pic"
       v-for="(item, index) in state.newslist2.filter((obj) =>
-        obj.hasOwnProperty('image_list')
+        Object.prototype.hasOwnProperty.call(obj, 'image_list')
       )"
-      @click="openurl(item.display_url)"
+      @click="openurl(item['display_url'])"
     >
       <div>
-        <a class="title">{{ item.abstract }}</a>
+        <a class="title">{{ item['abstract'] }}</a>
         <div class="pic-imglist">
-          <img class="pic-img" :src="`${item.image_list[0].url}`" />
-          <img class="pic-img" :src="`${item.image_list[1].url}`" />
-          <img class="pic-img" :src="`${item.image_list[2].url}`" />
+          <img class="pic-img" :src="`${item['image_list'][0]['url']}`" />
+          <img class="pic-img" :src="`${item['image_list'][1]['url']}`" />
+          <img class="pic-img" :src="`${item['image_list'][2]['url']}`" />
         </div>
         <div class="footer">
-          <span class="source">{{ item.media_info.name }}</span>
-          <span class="comment">{{ item.comment_count }}评论</span>
+          <span class="source">{{ item['media_info']['name'] }}</span>
+          <span class="comment">{{ item['comment_count'] }}评论</span>
         </div>
       </div>
     </div>
