@@ -54,11 +54,12 @@ const openurl = (e: string) => {
 	margin-left: 10px;
 	margin-top: 10px;
 }
+
 .pic-img {
-	margin-top: 5px;
   margin-left: 20px;
-  width: 350px;
-  height: 200px;
+  margin-left: 5px;
+  width: 7rem;
+  height: 3.5rem;
 }
 .title {
   opacity: 0.87;

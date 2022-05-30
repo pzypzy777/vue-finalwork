@@ -158,8 +158,8 @@ const openurl = (e: string) => {
 }
 .pic-img {
   margin-left: 5px;
-  width: 120px;
-  height: 100px;
+  width: 2.2rem;
+  height: 2.0rem;
 }
 .stick-label {
   color: red;
